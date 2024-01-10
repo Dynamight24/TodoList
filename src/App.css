@@ -1,38 +1,92 @@
-.App {
+*{
+  margin: 0%;
+  padding: 0%;
+}
+nav{
+  background-color: #1e90ff;
+  width: 100%;
+  padding: 20px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  padding:4vmax;
+  box-sizing: border-box;
+  background-color: rgb(203, 227, 248);
+  width: 70%;
+  height: 100vh;
+  margin: auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container>form{
   display: flex;
   flex-direction: column;
+}
+.container>h1{
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+input,textarea,button{
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.204);
+  margin: 5px 0px;
+}
+button{
+  border:none;
+  background-color: black;
+  color: aliceblue;
+  cursor: pointer;
+}
+.task{
+  display: flex;
+  background-color: white;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
   align-items: center;
+}
+.task>div{
+  width: 100%;
+}
+.task button{
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  font-size: 1.6rem;
+  background-color: crimson;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.task button:hover{
+  background-color: red;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Header{
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.Header a{
+  text-decoration: none;
+  color: black;
+  margin: 20px;
+}
+.About{
+  background-color:crimson;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.Contacts{
+  background-color: #1e90ff;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.user{
+  background-color:rgb(220, 20, 167);
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
